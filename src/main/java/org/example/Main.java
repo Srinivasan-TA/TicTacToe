@@ -26,7 +26,8 @@ public class Main {
             }
             board[row][col] = player;
             if (isWinningMove(row, col)) {
-                l.info("Match Over \n Player " + player + " wins!");
+                String s="Match Over \n Player " + player + " wins!";
+                l.info(s);
                 break;
             }
 
@@ -51,9 +52,11 @@ public class Main {
 
         l.info("  1 2 3");
         for (int i = 0; i < 3; i++) {
-            l.info(i + 1 + " ");
+           String d = i + 1 + " ";
+           l.info(d);
             for (int j = 0; j < 3; j++) {
-                l.info(board[i][j] + " ");
+                String b =board[i][j] + " ";
+                l.info(b);
             }
             l.info("\n");
         }
