@@ -22,7 +22,6 @@ public class Main {
             int col = input.nextInt() - 1;
             if (!isValidMove(row, col)) {
                 l.info("Invalid move. Try again.");
-                continue;
             }
             board[row][col] = player;
             if (isWinningMove(row, col)) {
