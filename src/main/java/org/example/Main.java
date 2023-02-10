@@ -16,7 +16,8 @@ public class Main {
             count++;
             l.info("Current board: ");
             printBoard();
-            l.info("Player " + player + " turn. Enter row and column: ");
+            String z ="Player " + player + " turn. Enter row and column: ";
+            l.info(z);
             int row = input.nextInt() - 1;
             int col = input.nextInt() - 1;
             if (!isValidMove(row, col)) {
